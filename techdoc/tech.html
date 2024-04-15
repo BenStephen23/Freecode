@@ -7,91 +7,93 @@
     <link rel="stylesheet" href="tech.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <nav id="navbar">
-        <header>CSS Documentation</header>
-        <a class="nav-link" href="#Introduction">Introduction</a>
-        <a class="nav-link" href="#Why_Use_CSS">Why Use CSS</a>
-        <a class="nav-link" href="#CSS_Selectors">CSS Selectors</a>
-        <a class="nav-link" href="#CSS_Comments">CSS Comments</a>
-        <a class="nav-link" href="#CSS_Fonts">CSS Fonts</a>
-    </nav>
+<body class="bg-gray-400">
+    <main id="main-doc" class="md:flex md:justify-evenly">
+        <div class="">
 
-    <main id="main-doc">
-
-        <section class="main-section" id="Introduction">
-            <header>Introduction</header>
-            <article>
-                <p>CSS is the language we use to style a Web page.</p>
-                <h4>What is CSS</h4>
-                <ul>
-                    <li>CSS stands for Cascading Style Sheets</li>
-                    <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
-                    <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
-                    <li>External stylesheets are stored in CSS files</li>
+            <nav id="navbar">
+                <header class="text-center font-bold text-lg md:text-2xl my-2">CSS Documentation</header>
+                
+                <a class="nav-link block text-justify px-4 py-1 md:py-2 text-xl md:text-2xl" href="#Introduction">Introduction</a>
+                <a class="nav-link block text-justify px-4 py-1 md:py-2 text-xl md:text-2xl" href="#Why_Use_CSS">Why Use CSS</a>
+                <a class="nav-link block text-justify px-4 py-1 md:py-2 text-xl md:text-2xl" href="#CSS_Selectors">CSS Selectors</a>
+                <a class="nav-link block text-justify px-4 py-1 md:py-2 text-xl md:text-2xl" href="#CSS_Comments">CSS Comments</a>
+                <a class="nav-link block text-justify px-4 py-1 md:py-2 text-xl md:text-2xl" href="#CSS_Fonts">CSS Fonts</a>
+                
+            </nav>
+        </div>
+            
+        <main id="">
+            
+            <section class="main-section px-4" id="Introduction">
+                <header class="text-center mt-2 font-bold text-lg md:text-2xl">Introduction</header>
+                <p class="text-sm md:text-lg text-justify">CSS is the language we use to style a Web page.</p>
+                <h4 class="mt-1 font-bold text-sm md:text-lg">What is CSS?</h4>
+                <ul class="list-disc mx-4">
+                    <li class="text-sm md:text-lg text-justify mt-1">CSS stands for Cascading Style Sheets</li>
+                    <li class="text-sm md:text-lg text-justify mt-1">CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                    <li class="text-sm md:text-lg text-justify mt-1">CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                    <li class="text-sm md:text-lg text-justify mt-1">External stylesheets are stored in CSS files</li>
                 </ul>
-            </article>
-        </section>
-
-        <section class="main-section" id="Why_Use_CSS">
-            <header>Why Use CSS</header>
-            <article>
-                <p>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
-                <h4>Reasons we use CSS</h4>
-                <ul>
-                    <li>CSS solved a big problem</li>
-                    <li>CSS saves a lot of work</li>
+               <p class="text-sm md:text-lg text-justify mt-1">Here we will show one HTML page displayed with four different stylesheets.</p>
+            </section>
+            
+            <section class="main-section px-4" id="Why_Use_CSS">
+                <header class="text-center mt-2 font-bold text-lg md:text-2xl">Why Use CSS</header>  
+                <p class="text-sm md:text-lg text-justify">CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
+                <h4 class="mt-1 font-bold text-sm md:text-lg">Reasons we use CSS</h4>
+                <ul class="list-disc mx-4">
+                    <li class="text-sm md:text-lg text-justify mt-1">CSS solved a big problem</li>
+                    <li class="text-sm md:text-lg text-justify mt-1">CSS saves a lot of work</li>
                 </ul>
-            </article>
-        </section>
-
-        <section class="main-section" id="CSS_Selectors">
-            <header>CSS Selectors</header>
-            <article>
-                <p>CA CSS selector selects the HTML element(s) you want to style.</p>
-                <h4>CSS Selectors</h4>
-                <p>CSS selectors are used to "find" (or select) the HTML elements you want to style. <br> We can divide CSS selectors into five categories:</p>
-                <ul>
-                    <li>Simple selectors (select elements based on name, id, class)</li>
-                    <li>Combinator selectors (select elements based on a specific relationship between them)</li>
-                    <li>Pseudo-class selectors (select elements based on a certain state)</li>
-                    <li>Pseudo-elements selectors (select and style a part of an element)</li>
-                    <li>Attribute selectors (select elements based on an attribute)</li>
+                <p class="text-sm md:text-lg text-justify mt-1">CSS is used to control the layout of multiple web pages all at once</p>
+                
+            </section>
+            
+            <section class="main-section px-4" id="CSS_Selectors">
+                <header class="text-center mt-2 font-bold text-lg md:text-2xl">CSS Selectors</header>    
+                <p class="text-sm md:text-lg text-justify">CSS selector selects the HTML element(s) you want to style.</p>
+                <h4 class="mt-1 font-bold text-sm md:text-lg">CSS Selectors</h4>
+                <p class="text-sm md:text-lg text-justify mt-1">CSS selectors are used to "find" (or select) the HTML elements you want to style. <br> We can divide CSS selectors into five categories:</p>
+                <ul class="list-disc mx-4">
+                    <li class="text-sm md:text-lg text-justify mt-1">Simple selectors (select elements based on name, id, class)</li>
+                    <li class="text-sm md:text-lg text-justify mt-1">Combinator selectors (select elements based on a specific relationship between them)</li>
+                    <li class="text-sm md:text-lg text-justify mt-1">Pseudo-class selectors (select elements based on a certain state)</li>
+                    <li class="text-sm md:text-lg text-justify mt-1">Pseudo-elements selectors (select and style a part of an element)</li>
+                    <li class="text-sm md:text-lg text-justify mt-1">Attribute selectors (select elements based on an attribute)</li>
                 </ul>
-            </article>
-        </section>
-
-        <section class="main-section" id="CSS_Comments">
-            <header>CSS Comments</header>
-            <article>
-                <p>CSS comments are not displayed in the browser, but they can help document your source code.</p>
-                <h4>CSS Comments</h4>
-                <p>Comments are used to explain the code, and may help when you edit the source code at a later date. <br>Comments are ignored by browsers. <br>A CSS comment is placed inside the code, and starts with <code>/*</code> and ends with <code>*/</code>. </p>
-            </article>
-
-        </section>
-
-        <section class="main-section" id="CSS_Fonts">
-            <header>CSS Fonts</header>
-            <article>
-                <h4>Font Selection is important</h4>
-                <p>Choosing the right font has a huge impact on how the readers experience a website.</p>
-
-                <h5>Generic Font Family</h5>
-                <p>In CSS there are five generic font families:</p>
-                <ol>
-                    <li>Serif fonts have a small stroke at the edges of each letter.</li>
-                    <li>Sans-serif fonts have clean lines (no small strokes attached).</li>
-                    <li>Monospace fonts - here all the letters have the same fixed width.</li>
-                    <li>Cursive fonts imitate human handwriting.</li>
-                    <li>Fantasy fonts are decorative/playful fonts.</li>
+                <a class="text-sm md:text-lg text-justify mt-1" href="https://www.w3schools.com/css/css_selectors.asp"><p>This page will explain the most basic CSS selectors.</p></a>
+                
+            </section>
+            
+            <section class="main-section px-4" id="CSS_Comments">
+                <header class="text-center mt-2 font-bold text-lg md:text-2xl">CSS Comments</header>
+                <p class="text-sm md:text-lg text-justify">CSS comments are not displayed in the browser, but they can help document your source code.</p>
+                <h4 class="mt-1 font-bold text-sm md:text-lg">CSS Comments</h4>
+                <p class="text-sm md:text-lg text-justify mt-1">Comments are used to explain the code, and may help when you edit the source code at a later date. <br>Comments are ignored by browsers. <br>A CSS comment is placed inside the code, and starts with <code>/*</code> and ends with <code>*/</code>. </p>
+                <p class="text-sm md:text-lg text-justify mt-1">Comments can be added wherever you want in the code</p>
+                <p class="text-sm md:text-lg text-justify mt-1">Comments can be used to explain the code, and may help when you edit the source code at a later date. Comments are ignored by browsers.</p>     
+            </section>
+            
+            <section class="main-section px-4" id="CSS_Fonts">
+                <header class="text-center mt-2 font-bold text-lg md:text-2xl">CSS Fonts</header>
+                <h4 class="mt-1 font-bold text-sm md:text-lg">Font Selection is important</h4>
+                <p class="text-sm md:text-lg text-justify">Choosing the right font has a huge impact on how the readers experience a website.</p>    
+                <h5 class="mt-1 font-bold text-sm md:text-lg">Generic Font Family</h5>
+                <p class="text-sm md:text-lg text-justify mt-1">In CSS there are five generic font families:</p>
+                <ol class="list-disc mx-4">
+                    <li class="text-sm md:text-lg text-justify mt-1">Serif fonts have a small stroke at the edges of each letter.</li>
+                    <li class="text-sm md:text-lg text-justify mt-1">Sans-serif fonts have clean lines (no small strokes attached).</li>
+                    <li class="text-sm md:text-lg text-justify mt-1">Monospace fonts - here all the letters have the same fixed width.</li>
+                    <li class="text-sm md:text-lg text-justify mt-1">Cursive fonts imitate human handwriting.</li>                        
+                    <li class="text-sm md:text-lg text-justify mt-1">Fantasy fonts are decorative/playful fonts.</li>
                 </ol>
-
-            </article>
-
-        </section>
-
+                <p class="text-sm md:text-lg text-justify mt-1">All the different font names belong to one of the generic font families.</p>
+                
+            </section>
+            
+        </main>
+        
     </main>
-    
-</body>
+    </body>
 </html>

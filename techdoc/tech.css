@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+}
+
+.navlink {
+    border-bottom: 5px solid black
+}
+
+@media (min-width: 768px) {
+    #navbar {
+        width: 30vw
+    }
+}
