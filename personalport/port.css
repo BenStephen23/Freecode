@@ -1,0 +1,15 @@
+.hero {
+    background-image: url(portimg/IMG_0399.jpg);
+    height: 100vh;
+}
+
+@media (min-width: 768px) {
+    .pcas {
+        font-size: 1.5rem;
+    }
+}
+
+#navbar {
+    top: 0;
+    position: sticky;
+}

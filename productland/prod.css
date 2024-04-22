@@ -6,3 +6,7 @@
     height: 150px;
     width: 150px;
 }
+
+header {
+    position: static !important;
+}
